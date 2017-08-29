@@ -3,16 +3,25 @@ import java.util.Set;
 
 public class AluguelChaleSingleton 
 {
-	private static final AluguelChaleSingleton INSTANCE= new AluguelChaleSingleton();
+	private static  AluguelChaleSingleton INSTANCE= new AluguelChaleSingleton();
 	private Set<String> chalesDisponiveis;
 	
 	
 	
-	public static AluguelChaleSingleton getInstance() {
+	public static AluguelChaleSingleton getInstance() 
+	{	
+		if(INSTANCE== null){
+			synchronized (AluguelChaleSingleton.class){
+				if(INSTANCE == null){
+					INSTANCE = new AluguelChaleSingleton();
+				}
+			}
+			
+		}
 		return INSTANCE;
 	}
 
-	public AluguelChaleSingleton()
+	private AluguelChaleSingleton()
 	{	
 		this.chalesDisponiveis=  new HashSet<>();
 		chalesDisponiveis.add("001");
