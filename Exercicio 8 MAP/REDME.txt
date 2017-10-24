@@ -1,0 +1,9 @@
+ prós = 
+      -Família de Algoritmo: Permite a criação de uma hierarquia de classes do tipo Strategy em um mesmo contexto.
+      -Subclasses Alternativas: Acontece o encapsulamento dos algoritmos nas classes Strategy o que permite variar o algoritmo              independentemente do seu contexto, tornando mais fácil de efetuar possíveis alterações no código.
+      -Classes Estratégicas: Com as classes Strategy pode-se excluir comandos condicionais para a seleção do comportamento desejado. No              momento em que diferentes comportamentos são agrupados em uma classe é trabalhoso evitar o uso destes comandos para selecionar o              comportamento correto.
+      -Escolha de implementações: As classes Strategy podem fornecer diferentes implementações do mesmo comportamento.  O cliente pode              escolher entre as estratégias aquela que mais lhe favorece.
+contras = 
+      -Clientes devem conhecer as classes Strategy: Pois se o cliente não compreender como essas classes funcionam, não poderá escolher o            melhor comportamento.
+      -Custo entre a comunicação Strategy e Context: as classes que implementam a interface Strategy podem não utilizar as informações              passadas por ela, ou seja, pode acontecer da classe Context criar e iniciar parâmetros que não serão utilizados.
+      -Maior número de objetos: Strategies aumentam o número de classes na aplicação, em alguns casos pode-se diminuir o custo, ao utilizar          objetos sem estados que os contextos podem usar em conjunto. Mas se tiver qualquer mudança no estado este será mantido pela classe            Context que passará cada estado ao objeto Strategy.
