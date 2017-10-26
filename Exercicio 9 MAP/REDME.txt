@@ -1,3 +1,4 @@
 Parte I - Porque a implementação da Playlist tem repetição do bloco switch-case? 
-Existe uma alternativa para retirarmos esta duplicação de código? 
-Qual?
+R- Porque para cada tipo de tipo(metodo diferentes) de reprodução ele faz uso do mesmo codigo.
+Existe uma alternativa para retirarmos esta duplicação de código? Qual?
+R- Sim, isolando o comportamento comum do codigo e deixando que as subclasses que estenderem tratem como necessitem. TemplateMethod.
