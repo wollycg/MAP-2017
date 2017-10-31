@@ -1,0 +1,5 @@
+Compare a aplicação que usamos no Imaginarium Tabajara com o exemplo de Marcos Brizeno
+1.Quais as diferenças fundamentais?
+R-No exemplo de marcos, uma solicitação(pagamento) é emitida para um(banco) dentre varios objetos(bancos). ja na tabajara um objeto(filtro novo) trata varios objetos(filtros) mesmo sem conhece-los a priori.
+2.Quais as semelhanças?
+R- Os dois tratam objetos para funcionar como desejam mesmo sem um conhecimento especifico.
