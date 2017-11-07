@@ -1,0 +1,6 @@
+1 - o exemplo apresenta um método para notificar os observadores sobre alguma mudança do comportamento do objeto.
+
+2- Forçar os interessados em observar os estados do objeto a se registrarem ou fazer com que os interessados no comportamento do objeto nao serem notificados obrigando eles a sempre observar o objeto para saber seu estado.
+
+3- O artigo trata de Canal de Eventos onde dentro de um objeto teremos todos os eventos, e este fica sendo observado por vários objetos. Cada cliente deve encontrar o seu registro para cada objeto individualmente, se este tiver vários eventos será necessário registar cada um individualmente e uma assinatura separada.O Event Aggregator funciona assim, você registra todos os objetos de origem que você está interessado tendo todos os objetos de destinos registrados nesse Event Aggregator. Ele converte, generaliza eventos que são espefícicos de um objeto de origem em um objeto genérico, garantindo aos observadores que não precisam se registrar em muitos tipos de eventos individuais.Um bom Aggregador centraliza toda logica para a classe Event Aggregator, simplificando o registro e os problemas de gerenciamento de memoria ao usar observadores melhorando o desempenho.
+	
